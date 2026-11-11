@@ -1,0 +1,15 @@
+aws ec2 run-instances \
+>   --image-id ami-01a00762f46d584a1 \
+>   --instance-type t3.micro \
+>   --key-name LinuxKey \
+>   --security-group-ids sg-030e67650c6340437 \
+>   --subnet-id subnet-045a58344e9a3021f \
+>   --count 2
+
+aws ec2 run-instances \
+  --image-id ami-0bdc7d025135d7b49 \
+  --instance-type t3.micro \
+  --key-name LinuxKey \
+  --security-group-ids sg-030e67650c6340437 \
+  --subnet-id subnet-089b4c687411f8458 \
+  --count 2
